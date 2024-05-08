@@ -5,7 +5,7 @@ import string
 
 
 def rot13(message):
-    return "".join([string.ascii_letters[int((string.ascii_letters.index(letter) + 13) % 26)+26] if letter.isupper() else string.ascii_letters[int((string.ascii_letters.index(letter) + 13) % 26)] if letter in string.ascii_letters else for letter in message])
+    return "".join([string.ascii_letters[int((string.ascii_letters.index(letter) + 13) % 26)+26] if letter.isupper() else string.ascii_letters[int((string.ascii_letters.index(letter) + 13) % 26)] if letter in string.ascii_letters else letter for letter in message])
 
     letters = string.ascii_letters
 
