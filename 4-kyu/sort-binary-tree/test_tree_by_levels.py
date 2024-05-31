@@ -9,9 +9,6 @@ class Node:
         self.value = n
 
 
-buh = Node(L=Node(L=None, R=Node(L=None, R=None, n=4), n=2), R=Node(L=Node(L=None, R=None, n=5), R=Node(L=None, R=None, n=6), n=3), n=1)
-
-
 @pytest.mark.parametrize("node, expected",
                          [
                             (Node(L=Node(L=None, R=Node(L=None, R=None, n=4), n=2), R=Node(L=Node(L=None, R=None, n=5), R=Node(L=None, R=None, n=6), n=3), n=1), [1, 2, 3, 4, 5, 6]),
